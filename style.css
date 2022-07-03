@@ -11,11 +11,6 @@
     color: #ffffff;
 }
 
-.card {
-    border-radius: 0px;
-    box-shadow: 0px 0px;
-}
-
 .homeHeader {
     background: linear-gradient(180deg, #ECE9E6 0%, #FFFFFF 100%);
 }
@@ -61,4 +56,11 @@
 
 b {
     font-weight: bold;
+}
+
+@media (max-width:1023px) {
+    .trailer-caption {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
 }
