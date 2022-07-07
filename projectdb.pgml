@@ -3,12 +3,12 @@
     <dmdesigns>
         <dmdesign active>
             <dmdesignskill skill="bs5.colors">
-                <dmcolor key="primary" color="rgb(108,148,188)"/>
+                <dmcolor key="primary" color="#e82323"/>
                 <dmcolor key="secondary" color="rgb(96,74,41)"/>
                 <dmcolor key="info" color="rgb(133,169,204)"/>
                 <dmcolor key="success" color="#198754"/>
                 <dmcolor key="warning" color="#ffc107"/>
-                <dmcolor key="danger" color="#dc3545"/>
+                <dmcolor key="danger" color="#9a111f"/>
                 <dmcolor key="white" color="white"/>
                 <dmcolor key="light" color="#f8f9fa"/>
                 <dmcolor key="dark" color="#212529"/>
