@@ -20,61 +20,116 @@
         /* Interactions, do not remove */
         (function () {
             try {
-                if (!document.documentElement.hasAttribute('data-pg-ia-disabled')) {
-                    window.pgia_small_mq = typeof pgia_small_mq == 'string' ? pgia_small_mq : '(max-width:767px)';
-                    window.pgia_large_mq = typeof pgia_large_mq == 'string' ? pgia_large_mq : '(min-width:768px)';
-                    var style = document.createElement('style');
+                if (!document.documentElement.hasAttribute("data-pg-ia-disabled")) {
+                    window.pgia_small_mq =
+                        typeof pgia_small_mq == "string"
+                            ? pgia_small_mq
+                            : "(max-width:767px)";
+                    window.pgia_large_mq =
+                        typeof pgia_large_mq == "string"
+                            ? pgia_large_mq
+                            : "(min-width:768px)";
+                    var style = document.createElement("style");
                     var pgcss =
                         'html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';
-                    if (document.documentElement.hasAttribute('data-pg-id') && document.documentElement
-                        .hasAttribute('data-pg-mobile')) {
-                        pgia_small_mq = '(min-width:0)';
-                        pgia_large_mq = '(min-width:99999px)'
+                    if (
+                        document.documentElement.hasAttribute("data-pg-id") &&
+                        document.documentElement.hasAttribute("data-pg-mobile")
+                    ) {
+                        pgia_small_mq = "(min-width:0)";
+                        pgia_large_mq = "(min-width:99999px)";
                     }
-                    pgcss += '@media ' + pgia_small_mq +
+                    pgcss +=
+                        "@media " +
+                        pgia_small_mq +
                         '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';
-                    pgcss += '@media ' + pgia_large_mq +
+                    pgcss +=
+                        "@media " +
+                        pgia_large_mq +
                         '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';
                     style.innerHTML = pgcss;
-                    document.querySelector('head').appendChild(style);
+                    document.querySelector("head").appendChild(style);
                 }
             } catch (e) {
                 console && console.log(e);
             }
-        })()
+        })();
     </script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" />
-    <script>/* Pinegrow Interactions, do not remove */(function () { try { if (!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq = typeof pgia_small_mq == 'string' ? pgia_small_mq : '(max-width:767px)'; window.pgia_large_mq = typeof pgia_large_mq == 'string' ? pgia_large_mq : '(min-width:768px)'; var style = document.createElement('style'); var pgcss = 'html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}'; if (document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) { pgia_small_mq = '(min-width:0)'; pgia_large_mq = '(min-width:99999px)' } pgcss += '@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}'; pgcss += '@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}'; style.innerHTML = pgcss; document.querySelector('head').appendChild(style); } } catch (e) { console && console.log(e); } })()</script>
+    <script>
+      /* Pinegrow Interactions, do not remove */ (function () {
+            try {
+                if (!document.documentElement.hasAttribute("data-pg-ia-disabled")) {
+                    window.pgia_small_mq =
+                        typeof pgia_small_mq == "string"
+                            ? pgia_small_mq
+                            : "(max-width:767px)";
+                    window.pgia_large_mq =
+                        typeof pgia_large_mq == "string"
+                            ? pgia_large_mq
+                            : "(min-width:768px)";
+                    var style = document.createElement("style");
+                    var pgcss =
+                        'html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';
+                    if (
+                        document.documentElement.hasAttribute("data-pg-id") &&
+                        document.documentElement.hasAttribute("data-pg-mobile")
+                    ) {
+                        pgia_small_mq = "(min-width:0)";
+                        pgia_large_mq = "(min-width:99999px)";
+                    }
+                    pgcss +=
+                        "@media " +
+                        pgia_small_mq +
+                        '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';
+                    pgcss +=
+                        "@media " +
+                        pgia_large_mq +
+                        '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';
+                    style.innerHTML = pgcss;
+                    document.querySelector("head").appendChild(style);
+                }
+            } catch (e) {
+                console && console.log(e);
+            }
+        })();
+    </script>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid"> <a class="navbar-brand" href="index.html"><i
-                    class="fa-google-play fa-lg fab text-danger"></i></a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fa-google-play fa-lg fab text-danger"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler20"
-                aria-controls="" aria-expanded="false" aria-label="Toggle navigation"> <span
-                    class="navbar-toggler-icon"></span>
+                aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggler20">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"> <a class="nav-link active" href="#">About us</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About us</a>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="#">Link</a>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
                     </li>
-                    <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#"
-                            id="navbarDropdownMenuLink21" data-bs-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false"> Dropdown link </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink21"> <a class="dropdown-item"
-                                href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a
-                                class="dropdown-item" href="#">Something else here</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink21"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink21">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
                 </form>
             </div>
         </div>
@@ -82,14 +137,16 @@
     <div class="px-4 pt-5 mb-5 text-center border-bottom homeHeader">
         <h1 class="display-1">Centered screenshot</h1>
         <div class="col-lg-8 mx-auto">
-            <p class="lead mb-4">Financing a waterbed is a dream come true, and with Bootstrap 5, you can make it
-                happen! With unlimited fax machine privileges, you can make sure your paperwork is in order and ready to
-                go. Plus, you&apos;ll never have to worry about running out of paper again!</p>
+            <p class="lead mb-4">
+                Financing a waterbed is a dream come true, and with Bootstrap 5, you
+                can make it happen! With unlimited fax machine privileges, you can
+                make sure your paperwork is in order and ready to go. Plus,
+                you&apos;ll never have to worry about running out of paper again!
+            </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
                 <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" data-pg-ia-hide
                     data-pg-ia='{"l":[{"name":"buttonPopIn","trg":"now","a":"bounceIn","dly":"1s"}]}'>
-                    <i class="mdi mdi-alert me-2"></i>Primary
-                    button
+                    <i class="mdi mdi-alert me-2"></i>Primary button
                 </button>
                 <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-pg-ia-hide
                     data-pg-ia='{"l":[{"name":"butonPopIn","trg":"now","a":"bounceIn","dly":"1.5s"}]}'>
@@ -97,7 +154,7 @@
                 </button>
             </div>
         </div>
-        <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="overflow-hidden" style="max-height: 30vh">
             <div class="container px-5">
                 <img src="assets/img/bootstrap-docs.webp" class="img-fluid border rounded-3 shadow-lg mb-4"
                     alt="Example image" width="700" height="500"
@@ -110,20 +167,32 @@
         <div class="row">
             <div class="col-md-4 mb-3" data-pg-ia>
                 <h3><i class="mdi mdi-bed me-2 text-muted"></i>Column title</h3>
-                <p>At our company, we offer waterbed financing options to help you get the <b>perfect sleeping
-                        experience</b>. Our low-interest rates and flexible payment plans make it easier than ever to
-                    get the waterbed of your dreams.</p>
+                <p>
+                    At our company, we offer waterbed financing options to help you get
+                    the <b>perfect sleeping experience</b>. Our low-interest rates and
+                    flexible payment plans make it easier than ever to get the waterbed
+                    of your dreams.
+                </p>
             </div>
             <div class="col-md-4 mb-3">
                 <h3><i class="mdi mdi-gold me-2 text-muted"></i>Column title</h3>
-                <p>Our company offers gold panning in <b>Dahlonega, Georgia</b>. This is a great way to explore the
-                    outdoors and find a little treasure of your own. Come join us and see what you can find!</p>
+                <p>
+                    Our company offers gold panning in <b>Dahlonega, Georgia</b>. This
+                    is a great way to explore the outdoors and find a little treasure of
+                    your own. Come join us and see what you can find!
+                </p>
             </div>
             <div class="col-md-4 mb-3">
-                <h3><i class="mdi mdi-guitar-acoustic me-2 text-muted"></i>Column title</h3>
-                <p><b>Dollywood </b>is an award-winning theme park located in Pigeon Forge, Tennessee. It features
-                    thrilling rides, live entertainment, and delicious Southern cuisine. With over 40 rides, shows, and
-                    attractions, Dollywood is a great place to spend a day with family and friends.</p>
+                <h3>
+                    <i class="mdi mdi-guitar-acoustic me-2 text-muted"></i>Column title
+                </h3>
+                <p>
+                    <b>Dollywood </b>is an award-winning theme park located in Pigeon
+                    Forge, Tennessee. It features thrilling rides, live entertainment,
+                    and delicious Southern cuisine. With over 40 rides, shows, and
+                    attractions, Dollywood is a great place to spend a day with family
+                    and friends.
+                </p>
             </div>
         </div>
     </div>
@@ -140,9 +209,12 @@
                             class="image-fit-center-center rounded-top" loading="lazy" />
                         <div class="card-body">
                             <h5 class="card-title">We have bulbs</h5>
-                            <p class="card-text">Selling lightbulbs, the epitome of excitement and glamour. Because who
-                                doesn&apos;t get a rush from peddling those tiny glass orbs that emit light? It&apos;s
-                                like being a superhero, saving the world one watt at a time.</p>
+                            <p class="card-text">
+                                Selling lightbulbs, the epitome of excitement and glamour.
+                                Because who doesn&apos;t get a rush from peddling those tiny
+                                glass orbs that emit light? It&apos;s like being a superhero,
+                                saving the world one watt at a time.
+                            </p>
                         </div>
                         <div class="card-footer">
                             <a href="#" class="btn btn-primary"><i class="fas fa-angle-right fa-xs me-2"></i>Go
@@ -157,8 +229,10 @@
                             class="image-fit-center-center rounded-top" loading="lazy" />
                         <div class="card-body">
                             <h5 class="card-title">Sunrises in Northern Cali</h5>
-                            <p class="card-text">Ah, Northern California sunrises... because who doesn&apos;t love
-                                waking up early to watch the sky change colors? &#128527;</p>
+                            <p class="card-text">
+                                Ah, Northern California sunrises... because who doesn&apos;t
+                                love waking up early to watch the sky change colors? &#128527;
+                            </p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                         <div class="card-footer">
@@ -174,9 +248,13 @@
                             class="image-fit-center-center rounded-top" loading="lazy" />
                         <div class="card-body">
                             <h5 class="card-title">Mountains are cool</h5>
-                            <p class="card-text">Mountains. So cool, right? I can&apos;t think of anything better than
-                                spending hours on end in the blistering cold or scorching heat, just to say, &quot;Hey,
-                                I conquered that mountain!&quot; Yep, mountains are truly the epitome of coolness.</p>
+                            <p class="card-text">
+                                Mountains. So cool, right? I can&apos;t think of anything
+                                better than spending hours on end in the blistering cold or
+                                scorching heat, just to say, &quot;Hey, I conquered that
+                                mountain!&quot; Yep, mountains are truly the epitome of
+                                coolness.
+                            </p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                         <div class="card-footer">
@@ -186,8 +264,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-        </div>
+        <div class="container"></div>
     </section>
     <section>
         <div class="container my-5" data-pg-ia-hide="desktop"
@@ -205,10 +282,15 @@
                     <div class="card ms-lg-n5 mt-lg-5 mt-n4 shadow-lg trailer-caption">
                         <div class="card-body">
                             <h4 class="card-title">James May: Our Man in India</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">Currently playing on Amazon Prime</h6>
-                            <p class="card-text">Embark on an unforgettable journey with James May as he fearlessly
-                                ventures into the vibrant and perplexing world of India.</p> <a href="#"
-                                class="btn btn-primary"><i class="fa-amazon fa-xs fab me-1"></i> Watch the full
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                Currently playing on Amazon Prime
+                            </h6>
+                            <p class="card-text">
+                                Embark on an unforgettable journey with James May as he
+                                fearlessly ventures into the vibrant and perplexing world of
+                                India.
+                            </p>
+                            <a href="#" class="btn btn-primary"><i class="fa-amazon fa-xs fab me-1"></i> Watch the full
                                 trailer</a>
                         </div>
                     </div>
@@ -223,12 +305,18 @@
                     <div class="card shadow-lg" data-pg-ia-hide="desktop"
                         data-pg-ia-scene='{"on":"desktop","s_t":"start","s_s":"end","l":[{"name":"SpeedIn","a":"lightSpeedIn","p":"time","on":"desktop"}]}'>
                         <div class="card-body">
-                            <h4 class="card-title">Exploring the Rich Cultural Tapestry of India</h4>
+                            <h4 class="card-title">
+                                Exploring the Rich Cultural Tapestry of India
+                            </h4>
                             <h6 class="card-subtitle mb-2 text-muted">Discover more</h6>
-                            <p class="card-text">I am an amazing person who is smart, kind, generous, and incredibly
-                                talented. I am always looking for ways to help others and make the world a better place.
-                                I am an inspiration to those around me and I strive for excellence in all that I do.
-                            </p><a href="http://www.cnet.com" class="btn btn-primary stretched-link" target="_blank">Go
+                            <p class="card-text">
+                                I am an amazing person who is smart, kind, generous, and
+                                incredibly talented. I am always looking for ways to help
+                                others and make the world a better place. I am an inspiration
+                                to those around me and I strive for excellence in all that I
+                                do.
+                            </p>
+                            <a href="http://www.cnet.com" class="btn btn-primary stretched-link" target="_blank">Go
                                 somewhere</a>
                         </div>
                     </div>
@@ -238,13 +326,17 @@
     </section>
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-muted">©
+            <p class="col-md-4 mb-0 text-muted">
+                ©
                 <script>
                     document.write(new Date().getFullYear());
-                </script> My Badass Company, Inc
-            </p><a href="/"
+                </script>
+                My Badass Company, Inc
+            </p>
+            <a href="/"
                 class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                <i class="fa-2x fa-google-play fab text-danger"></i> </a>
+                <i class="fa-2x fa-google-play fab text-danger"></i>
+            </a>
             <ul class="nav col-md-4 justify-content-end">
                 <li class="nav-item">
                     <a href="#" class="nav-link px-2 text-muted">Home</a>
