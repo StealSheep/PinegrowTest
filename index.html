@@ -85,7 +85,7 @@
             <a class="navbar-brand" href="index.html" title="Logo"><i
                     class="fa-google-play fa-lg fab text-danger"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler20"
-                aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarToggler20" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggler20">
@@ -128,7 +128,7 @@
                     <i class="mdi mdi-alert me-2"></i>Primary button
                 </button>
                 <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-pg-ia-hide
-                    data-pg-ia='{"l":[{"name":"butonPopIn","trg":"now","a":"bounceIn","dly":"1.5s"}]}'>
+                    data-pg-ia='{"l":[{"name":"buttonPopIn","trg":"now","a":"bounceIn","dly":"1.5s"}]}'>
                     <i class="mdi mdi-car-brake-alert me-2"></i>Secondary
                 </button>
             </div>
@@ -174,6 +174,10 @@
     <section>
         <div class="container">
             <div class="row row-cols-md-3 g-4">
+                <!--
+                  All cards below use data-pg-ia-hide="desktop" to intentionally hide them on desktop devices.
+                  Documenting this for clarity: adjust or remove this attribute if you want cards visible on desktop.
+                -->
                 <div>
                     <div class="card h-100" data-pg-ia-hide="desktop"
                         data-pg-ia-scene='{"s":"custom","s_t":"start","s_s":"center","l":[{"name":"scrollCard","t":"this","a":"fadeInUp","p":"time","on":"desktop"}],"s_o":"150px"}'>
